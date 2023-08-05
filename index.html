@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="index.html">
+</head>
+<body>
+  <div class="container">
+    <form class="login-form" onsubmit="return redirectToMain()" method="post">
+      <h2>Login</h2>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  <script>
+    function redirectToMain() {
+      // Perform any login validation here if needed.
+      // For demonstration purposes, let's directly redirect to main.html.
+      window.location.href = 'homepage.html';
+      return false; // Prevent the default form submission behavior
+    }
+  </script>
+</body>
+</html>
